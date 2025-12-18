@@ -1,0 +1,38 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="ExchangePlace" Parent="ProductionBase">
+		<ThingName>灵石交易所</ThingName>
+		<Desc>用于灵石兑换的特殊设施。</Desc>
+		<TexPath>Spr\Building\ExchangePlace.png</TexPath>
+		<SelectAble>1</SelectAble>
+		<CastShadow>0</CastShadow>
+		<Beauty>12</Beauty>
+		<BlockLight>0</BlockLight>
+		<MaxHitPoints>1</MaxHitPoints>
+		<ColliderKind>None</ColliderKind>
+		<VisionRadius>0</VisionRadius>
+		<Collider>
+			<Data>
+				[3],
+			</Data>
+			<WorkOffset>
+				<li Index="0" X="0" Y="0" Ang="1"/>
+			</WorkOffset>
+		</Collider>
+		<Building>
+			<ShowFree>0</ShowFree>
+			<NoFengshui>1</NoFengshui>
+			<NoFight>1</NoFight>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<CanMakeRoom>0</CanMakeRoom>
+			<WorkAnimation>produce</WorkAnimation>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<Quality>0</Quality>
+			</BeMade>
+			<ProduceKind>Handwork</ProduceKind>
+		</Building>
+		<StoryBnts>
+			<li Name="兑换" Desc="打开兑换界面" Script="GameMain:GetMod('Windows'):GetWindow('JYSUIWindow'):ShowView(bind)" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+</List></ThingDefs>

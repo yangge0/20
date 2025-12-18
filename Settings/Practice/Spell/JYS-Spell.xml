@@ -1,0 +1,69 @@
+<Spells><List>	
+    <Spell Name="Spell_WaiMenHeJi">
+		<DisplayName>外门合集无加强符</DisplayName>
+		<Desc>统筹了所有的外门符的效果，去掉了负面，没有加强，正常强度符咒。</Desc>
+		<Template>Spell/main_texture_shou01</Template>
+		<Effects>
+			<li Name="MoveSpeed" AddP="0.3"/>
+            <li Name="ComfyTMin" AddV="-40"/>
+			<li Name="ToleranceTMin" AddV="-40"/>
+            <li Name="ComfyTMax" AddV="40"/>
+			<li Name="ToleranceTMax" AddV="40"/>
+            <li Name="GlobalEfficiency" AddP="0.4"/>
+            <li Name="MadeQualityAddValue" AddV="0.02"/>
+            <li Name="PlantHarvestYieldEfficiency" AddP="0.5"/>
+			<li Name="ButcherYieldEfficiency" AddP="0.5"/>
+            <li Name="TreatmentExpectQuality" AddP="0.5"/>
+			<li Name="TreatSuccessChance" AddP="0.5"/>
+            <li Name="IntelligenceSkillEXPConstant" AddP="0.15"/>
+            <li Name="NpcFight_BaseHitChance" AddV="0.4"/>
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.2"/>
+			<li Name="PainTolerance" AddP="0.5"/>
+            <li Name="HappyConsumeConstant" AddP="-0.3"/>
+			<li Name="BaseEmotionAddV" AddV="10"/>
+            <li Name="NutritionConsumeConstant" AddP="-0.5"/>
+			<li Name="WaterConsumeConstant" AddP="-0.5"/>
+            <li Name="FatigueConsumeConstant" AddP="-0.3"/>
+			<li Name="FatigueRecoveryConstant" AddP="0.3"/>
+            <li Name="RecoveryPower" AddP="0.3"/>
+		</Effects>
+	</Spell>
+
+    	<Spell Name="Spell_NeiMenFuZhuHeJi">
+		<DisplayName>内门辅助合集无加强符</DisplayName>
+		<Desc>统筹了常规辅助用的的内门符的效果，去掉了负面，没有加强，正常强度符咒。</Desc>
+		<Template>Spell/main_texture_shou01</Template>
+		<Effects>
+			<li Name="MoveSpeed" AddP="0.6"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="0.6"/>
+            <li Name="ComfyTMin" AddV="-20"/>
+			<li Name="ToleranceTMin" AddV="-20"/>
+            <li Name="ComfyTMax" AddV="80"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+            <li Name="MindStateBaseValue" AddV="5"/> 
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.2"/>
+            <li Name="FabaoMake_SuccessRateAddV" AddV="0.15"/>
+            <li Name="FabaoMake_LingInheritRateAddV" AddV="0.15"/>
+            <li Name="DanMake_SuccessRateAddV" AddV="0.15"/>
+            <li Name="DanMake_YieldAddP" AddV="0.2"/>
+		</Effects>
+	</Spell>
+
+        	<Spell Name="Spell_NeiMenZhanDouHeJi">
+		<DisplayName>内门战斗合集无加强符</DisplayName>
+		<Desc>统筹了部分普通战斗用的的内门符的效果，去掉了负面，没有加强，正常强度符咒。</Desc>
+		<Template>Spell/main_texture_shou01</Template>
+		<Effects>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.3"/>
+            <li Name="Barrier" LevelOver="1"/>
+            <li Name="NpcFight_ShieldResistanceToJin" AddV="0.06"/>
+            <li Name="NpcFight_ShieldResistanceToMu" AddV="0.06"/>
+            <li Name="NpcFight_ShieldResistanceToShui" AddV="0.06"/>
+            <li Name="NpcFight_ShieldResistanceToHuo" AddV="0.06"/>
+            <li Name="NpcFight_ShieldResistanceToTu" AddV="0.06"/>
+            <li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+            <li Name="Fabao" LevelOver="1"/>
+            <li Name="NpcFight_FabaoLingRecoverK" AddV="1"/>
+		</Effects>
+	</Spell>
+</List></Spells>
